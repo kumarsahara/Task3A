@@ -1,0 +1,14 @@
+let obj1 = {name:"person1",age:5};
+let obj2 = {age:5,name:"person1"};
+
+//console.log(Object.keys(obj2))
+//[ 'name', 'age' ] 
+//[ 'name', 'age' ]
+let numobj1 = JSON.stringify(obj1);
+let numobj2 = JSON.stringify(obj2);
+
+if(numobj1===numobj2){
+    console.log("codition are equal")
+} else(numobj1===numobj2);{
+    console.log("codition is not equal")
+}

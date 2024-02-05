@@ -1,0 +1,15 @@
+//Qus:print all coutires name,region,subregion,population
+
+let XHMLHttpRequest = require('xhr2');
+let xhr = new XHMLHttpRequest();
+xhr.open('GET','https://restcountries.com/v3.1/all');
+xhr.send();
+xhr.onload=function(){
+let countries = JSON.parse(xhr.responseText)
+countries.forEach((countries)  =>{
+    console.log(countries.name);
+    console.log(countries.region);
+    console.log(countries.subregion);
+    console.log(countries.population);
+})
+}
